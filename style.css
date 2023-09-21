@@ -232,14 +232,20 @@ header {
 }
 
 #popup {
-    background-color: white;
-    width: 300px;
-    height: 300px;
+    background-color: rgba(227, 227, 227, 0.959);
+    width: 400px;
+    height: 250px;
     color: rgb(50, 48, 48);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: black;
 }
 
 #close_popup {
@@ -247,4 +253,30 @@ header {
     width: 100vw;
     height: 100vh;
     position: absolute;
+}
+
+#image-popup {
+    height: 100px;
+    width: 100px;
+}
+
+#image-popup:hover {
+    animation: drive 2s linear infinite;
+
+}
+
+@keyframes drive {
+    0% {
+      transform: translateX(-50);
+    }
+    100% {
+      transform: translateX(100px); 
+    }
+  }
+
+#countdown {
+    margin-top: 20px;
+    color: green;
+    font-weight: 600;
+    font-size: 30px;
 }
