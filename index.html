@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunstblumen Onlineshop | langlebige Blumen </title>
+    <title>Kunstblumen Onlineshop | langlebige Blumen online kaufen</title>
     <meta name="description"
         content="Auf dem Kunstblumen Onlineshop finden Sie eine große Auswahl an künstlichen Blumen für nachhaltigen Gebrauch. Jetzt entdecken!">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <script src="script.js"></script>
 </head>
@@ -19,88 +19,93 @@
 <body onload="init()">
     <div id="popUp"></div>
     <header>
-        <menu-container id="menu-container">
+        <div id="menu-container">
             <img id="logo-menu" src="/img/logo-white.png" alt="logo">
-            <menu-bar id="menu-bar">
-                <a class="menu-link" href="">Home</a>
-                <a class="menu-link" href="">Shop</a>
-                <a class="menu-link" href="">Über uns</a>
-                <a class="menu-link" href="">Rezensionen</a>
+            <div id="menu-bar">
+                <a class="menu-link" href="#logo-menu">Home</a>
+                <a class="menu-link" href="#headline-shop">Shop</a>
+                <a class="menu-link" href="#rezensionen-container">Rezensionen</a>
+                <a class="menu-link" href="#footer-content">Kontakt</a>
                 <img id="icon-cart" src="/img/shopping-cart-icon.svg" alt="Warenkorb">
-            </menu-bar>
-        </menu-container>
-        <text-container id="text-container">
+            </div>
+        </div>
+        <div id="text-container">
             <h1>Kunstblumen Onlineshop</h1>
             <span id="description">Alles ist besser mit Pflanzen</span>
-            <button id="header-button">Jetzt shoppen!</button>
-        </text-container>
+            <a href="#headline-shop">
+                <button id="header-button">Jetzt shoppen!</button>
+            </a>
+        </div>
     </header>
 
-    <fact-container id="fact-container">
-        <fact-quality class="facts-container">
+    <div id="fact-container">
+        <div class="facts-container">
             <img class="icon-facts" src="/img/pflanze.png" alt="Pflanze">
-            <span-facts class="order-facts-span">
-                <headline-facts class="headline-facts">Hochwertige Pflanzen</headline-facts>
-                <description-facts class="description-facts">Sie finden hochwertigen Pflanzen in gewünschter
-                    Qualität</description-facts>
-            </span-facts>
-        </fact-quality>
-        <fact-range class="facts-container">
+            <div class="order-facts-span">
+                <h3 class="headline-facts">Hochwertige Pflanzen</h3>
+                <span class="description-facts">Sie finden hochwertigen Pflanzen in gewünschter
+                    Qualität
+            </div>
+            </span>
+        </div>
+        <div class="facts-container">
             <img class="icon-facts" src="/img/anbauen.png" alt="Auswahl">
-            <span-facts class="order-facts-span">
-                <headline-facts class="headline-facts">Große Auswahl</headline-facts>
-                <description-facts class="description-facts">Wählen Sie aus unserem großzügigem Sortiment, in Ihrer
-                    Wunschgröße</description-facts>
-            </span-facts>
-        </fact-range>
-        <fact-service class="facts-container">
+            <span class="order-facts-span">
+                <h3 class="headline-facts">Große Auswahl</h3>
+                <div class="description-facts">Wählen Sie aus unserem großzügigem Sortiment, in Ihrer
+                    Wunschgröße</div>
+            </span>
+        </div>
+        <div class="facts-container">
             <img class="icon-facts" src="/img/anruf.png" alt="Service">
-            <span-facts class="order-facts-span">
-                <headline-facts class="headline-facts">Top Service</headline-facts>
-                <description-facts class="description-facts">Genießen Sie excellenten Service mit 30 Tage
-                    Garantie</description-facts>
-            </span-facts>
-        </fact-service>
-        <fact-delivery class="facts-container">
+            <div class="order-facts-span">
+                <h3 class="headline-facts">Top Service</h3>
+                <div class="description-facts">Genießen Sie excellenten Service mit 30 Tage
+                    Garantie</div>
+            </div>
+        </div>
+        <div class="facts-container">
             <img class="icon-facts" src="/img/lieferwagen.png" alt="lieferung">
-            <span-facts class="order-facts-span">
-                <headline-facts class="headline-facts">Schnelle Lieferung</headline-facts>
-                <description-facts class="description-facts">Sie erhalten Ihre Lieferung sicher innerhalb von 3-5
-                    Tagen</description-facts>
-            </span-facts>
-        </fact-delivery>
-    </fact-container>
+            <div class="order-facts-span">
+                <h3 class="headline-facts">Schnelle Lieferung</h3>
+                <div class="description-facts">Sie erhalten Ihre Lieferung sicher innerhalb von 3-5
+                    Tagen</div>
+            </div>
+        </div>
+    </div>
 
     <div class="example-container">
-        <example-kaktus class="order-examples">
-            <img class="images-plants" src="/img/kaktus.jpg" alt="Kaktus">
-            <a class="fonts-examples" href="">
-                <span class="font-examples">Kakteen</span>
-                <img class="arrow" src="img/arrow.png" alt="Pfeil">
-            </a>
-        </example-kaktus>
-        <example-bonsai class="order-examples">
-            <img class="images-plants" src="/img/bonsai.jpg" alt="Bonsai">
-            <a class="fonts-examples" href="">
-                <span class="font-examples">Bonsai</span>
-                <img class="arrow" src="img/arrow.png" alt="Pfeil">
-            </a>
-        </example-bonsai>
-        <example-blume class="order-examples">
-            <img class="images-plants" src="/img/blume.jpg" alt="Blume">
-            <a class="fonts-examples" href="">
-                <span class="font-examples">Zimmerpflanzen</span>
-                <img class="arrow" src="img/arrow.png" alt="Pfeil">
-            </a>
-        </example-blume>
-        <example-china class="order-examples">
-            <img class="images-plants" src="/img/chinesicher-baum.jpg" alt="Chinesischer Baum">
-            <a class="fonts-examples" href="">
-                <span class="font-examples">Chinesischer Baum</span>
-                <img class="arrow" src="img/arrow.png" alt="Pfeil">
-            </a>
-        </example-china>
-
+        <h2 id="headline-shop">Shop</h2>
+        <div id="examples">
+            <div class="order-examples">
+                <img class="images-plants" src="/img/kaktus.jpg" alt="Kaktus">
+                <a class="fonts-examples" href="">
+                    <span class="font-examples">Kakteen</span>
+                    <img class="arrow" src="img/arrow.png" alt="Pfeil">
+                </a>
+            </div>
+            <div class="order-examples">
+                <img class="images-plants" src="/img/bonsai.jpg" alt="Bonsai">
+                <a class="fonts-examples" href="">
+                    <span class="font-examples">Bonsai</span>
+                    <img class="arrow" src="img/arrow.png" alt="Pfeil">
+                </a>
+            </div>
+            <div class="order-examples">
+                <img class="images-plants" src="/img/blume.jpg" alt="Blume">
+                <a class="fonts-examples" href="">
+                    <span class="font-examples">Zimmerpflanzen</span>
+                    <img class="arrow" src="img/arrow.png" alt="Pfeil">
+                </a>
+            </div>
+            <div class="order-examples">
+                <img class="images-plants" src="/img/chinesicher-baum.jpg" alt="Chinesischer Baum">
+                <a class="fonts-examples" href="">
+                    <span class="font-examples">Chinesischer Baum</span>
+                    <img class="arrow" src="img/arrow.png" alt="Pfeil">
+                </a>
+            </div>
+        </div>
     </div>
 
     <div id="rezensionen-container">
@@ -108,10 +113,10 @@
         <span id="description-rezension">Was unsere Kunden sagen</span>
         <div id="testimonials">
             <div class="personal-testimonial">
-                <span class="testimonial-text">Die Blumen, die ich hier gekauft habe, sind einfach wunderschön! Die
+                <span class="testimonial-text"><i>Die Blumen, die ich hier gekauft habe, sind einfach wunderschön! Die
                     Farben
                     sind lebendig und die Qualität ist erstklassig. Ich bin begeistert von meinem Einkauf und werde
-                    definitiv wieder hier bestellen.
+                    definitiv wieder hier bestellen.</i>
                 </span>
                 <div class="person-test">
                     <img class="avatar" src="/img/avatar.svg" alt="Mark">
@@ -119,11 +124,11 @@
                 </div>
             </div>
             <div class="personal-testimonial">
-                <span class="testimonial-text">Diese Pflanze hat mein Zuhause aufgewertet. Sie kam in einwandfreiem
+                <span class="testimonial-text"><i>Diese Pflanze hat mein Zuhause aufgewertet. Sie kam in einwandfreiem
                     Zustand
                     an und ist sehr pflegeleicht. Ich bin so froh, dass ich sie gekauft habe und kann sie jedem
                     empfehlen,
-                    der sein Zuhause mit etwas Grünem aufhellen möchte.
+                    der sein Zuhause mit etwas Grünem aufhellen möchte.</i>
                 </span>
                 <div class="person-test">
                     <img class="avatar" src="/img/avatar.svg" alt="Mark">
@@ -131,9 +136,9 @@
                 </div>
             </div>
             <div class="personal-testimonial">
-                <span class="testimonial-text">Der Kundenservice dieses Online-Shops verdient ein Lob. Als eine meiner
+                <span class="testimonial-text"><i>Der Kundenservice dieses Online-Shops verdient ein Lob. Als eine meiner
                     Pflanzen während des Transports beschädigt wurde, haben sie sofort reagiert und mir kostenlos Ersatz
-                    geschickt. Das ist echter Service!
+                    geschickt. Das ist echter Service!</i>
                 </span>
                 <div class="person-test">
                     <img class="avatar" src="/img/avatar.svg" alt="Mark">
@@ -141,10 +146,10 @@
                 </div>
             </div>
             <div class="personal-testimonial">
-                <span class="testimonial-text">Die Auswahl an Blumen und Pflanzen in diesem Shop ist beeindruckend. Ich
+                <span class="testimonial-text"><i>Die Auswahl an Blumen und Pflanzen in diesem Shop ist beeindruckend. Ich
                     habe
                     hier bereits mehrere Male eingekauft und jedes Mal etwas Einzigartiges gefunden. Dieser Shop ist
-                    definitiv meine erste Anlaufstelle für alles Grüne!
+                    definitiv meine erste Anlaufstelle für alles Grüne!</i>
                 </span>
                 <div class="person-test">
                     <img class="avatar" src="/img/avatar.svg" alt="Mark">
@@ -154,5 +159,18 @@
         </div>
     </div>
 </body>
+<footer>
+    <div id="footer-content">
+        <span id="contact">
+            Kontakt: <br>
+            <a href="mailto:fabian.jablonka@web.de">fabian.jablonka@web.de</a> <br>
+            <a href="tel:01714999906">+49 171 4999906</a>
+        </span>
+        <span id="adress">Adresse: <br>
+            Rettigheimer Str. 11 <br>
+            69242 Mühlhausen
+        </span>
+    </div>
+</footer>
 
 </html>

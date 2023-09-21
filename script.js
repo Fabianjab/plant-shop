@@ -1,11 +1,9 @@
 let countdownInterval; 
 
 function init() {
-    // if (!localStorage.getItem("popupShown")) {
-    //     openPopup();
-    // }
-
-    openPopup();
+    if (!localStorage.getItem("popupShown")) {
+        openPopup();
+    }
 }
 
 function openPopup() {
@@ -14,7 +12,7 @@ function openPopup() {
             <div id="popup">
                 <h3>VERSANDKOSTENFREI BESTELLEN</h3>
                 <img id="image-popup" src="/img/kostenloser-versand.png" alt="kostenfreier Versand">
-                <span>Bestellen Sie noch heute und erhalten Sie Ihre Bestellung versandkostenfrei ab einem Bestellwert von 50 Euro.</span>
+                <span>Bestellen Sie noch heute und erhalten Sie Ihre Bestellung versandkostenfrei ab einem Bestellwert von 50 Euro. Jetzt einkaufen & sparen!</span>
                 <div id="countdown"></div>
             </div>
         </div>`;
@@ -27,7 +25,7 @@ function openPopup() {
 }
 
 function closeWindow() {
-    clearInterval(countdownInterval); // Das Intervall stoppen, wenn das Popup geschlossen wird
+    clearInterval(countdownInterval);
     const closePopup = ``;
     document.getElementById("popUp").innerHTML = closePopup;
 }
@@ -36,7 +34,7 @@ function updateCountdown() {
     const countdownElement = document.getElementById("countdown");
 
     if (!countdownElement) {
-        return; // Wenn das Element nicht gefunden wird, die Funktion verlassen
+        return;
     }
 
     const now = new Date();
@@ -59,6 +57,6 @@ function updateCountdown() {
 }
 
 function startCountdown() {
-    updateCountdown(); // Initialen Countdown-Start aufrufen
-    setInterval(updateCountdown, 1000); // Alle 1000 Millisekunden (1 Sekunde) aktualisieren
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 }
